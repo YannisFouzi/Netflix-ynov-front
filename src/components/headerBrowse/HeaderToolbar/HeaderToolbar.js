@@ -8,9 +8,16 @@ import styles from "./HeaderToolbar.module.scss";
 import CartContext from "../../../context/CartContext";
 import Image from 'next/image'
 
+
 const Headertoolbar = () => {
 
     const { count } = useContext(CartContext);
+
+    function logout() {
+        localStorage.clear();
+        window.location.href = '/';
+    }
+
 
     return (
         <div className={styles.header__toolbar}>
@@ -65,7 +72,14 @@ const Headertoolbar = () => {
             </Link>
 
     <a href="#">Centre d&apos;aide</a>
-    <a href="#">Se déconnecter</a>
+
+  
+                <button onClick={() =>{logout()}}>
+                Se déconnecter
+                </button>
+         
+
+
   </div>
 
                 </div>
