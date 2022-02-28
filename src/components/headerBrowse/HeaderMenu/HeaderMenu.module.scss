@@ -1,0 +1,28 @@
+.header__menu {
+    position: fixed;
+    margin-top: 2%;
+    flex: 1;
+    a{
+        color: white;
+    }
+    ul {
+        margin-left: 25%;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0px;
+        li {
+            margin: 0px 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            font-size: 13px;
+            padding-bottom: 10px;
+            &.active {
+                font-weight: bold;
+                position: relative;
+      
+            }
+        }
+    }
+}

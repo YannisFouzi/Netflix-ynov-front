@@ -1,0 +1,82 @@
+.field input:not(:focus):valid ~ .floating_label, .field input:focus ~ .floating_label {
+	top: 8px;
+	bottom: 10px;
+	left: 20px;
+	font-size: 11px;
+	opacity: 1;
+}
+.wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.login {
+	width: 425px;
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 5px;
+	.signin_form {
+		width: 70%;
+		position: relative;
+		height: 100%;
+		.title {
+			color: white;
+		}
+		.onboarding {
+			bottom: 0;
+			margin-bottom: 50px;
+			position: absolute;
+			color: #989897;
+			div {
+				display: flex;
+				align-items: center;
+				.icon {
+					display: flex;
+					svg {
+						width: 20px;
+						height: 20px;
+					}
+				}
+				small {
+					padding-left: 5px;
+				}
+			}
+			p {
+				margin: 10px 0 0 0;
+				display: block;
+			}
+			a {
+				color: white;
+			}
+		}
+	}
+}
+.field {
+	position: relative;
+	input {
+		background: #333333;
+		color: white;
+		font-size: 14px;
+		width: 100%;
+		height: 45px;
+		margin: 5px 0;
+		border: none;
+		border-radius: 5px;
+		padding: 15px 0 0 20px;
+		outline: none;
+		&.invalid {
+			border-bottom: 2px solid orangered;
+		}
+	}
+}
+.floating_label {
+	position: absolute;
+	pointer-events: none;
+	left: 20px;
+	top: 18px;
+	transition: 0.2s ease all;
+	color: #989897;
+}

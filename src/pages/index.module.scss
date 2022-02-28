@@ -1,0 +1,247 @@
+
+
+.body{
+	margin: 0;
+	padding: 0;
+	flex-wrap: wrap;
+	display: flex;
+  
+	background-color: rgba(8, 8, 8, 0.89);
+
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    z-index: auto;
+    position: absolute;
+    width: 95%;
+}
+
+
+.main {
+  
+	background-color: rgba(8, 8, 8, 0.89);
+	width: 100%;
+	background-size: cover;
+	align-items: center;
+	overflow-x: hidden;
+	justify-content: center;
+	display: flex;
+	background-position: center;
+	min-height: 710px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://assets.nflxext.com/ffe/siteui/vlv3/a1dc92ca-091d-4ca9-a05b-8cd44bbfce6a/f9368347-e982-4856-a5a4-396796381f28/RS-en-20191230-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+}
+.area {
+	color: white;
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 70px;
+	h1 {
+		padding: 20px;
+		font-size: 60px;
+		word-spacing: 15px;
+		line-height: 75px;
+	}
+	h3 {
+		padding: 20px;
+		font-size: 27px;
+	} 
+	h4 {
+		padding: 20px;
+		font-size: 17px;
+	} 
+}
+.search {
+	width: 150%;
+	background-color: none;
+	min-height: 80px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	margin-top: 10px;
+}
+.box {
+	width: 100%;
+	min-height: 65px;
+}
+.try {
+	cursor: pointer;
+	color: white;
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #e50914;
+	min-height: 70px;
+	width: 40%;
+	font-size: 30px;
+}
+
+.area {
+	h4 {
+		margin-top: 10px;
+		font-weight: normal;
+	}
+}
+.container1 {
+	width: 100%;
+	min-height: 460px;
+	background-color: black;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: left;
+	img {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		object-fit: contain;
+		object-position: center;
+		align-self: center;
+		max-width: 100%;
+		height: 350px;
+	}
+	.image {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		align-items: center;
+		align-self: center;
+		object-fit: contain;
+	}
+}
+.text {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	align-self: center;
+	align-content: center;
+	p {
+		font-size: 1.5rem;
+		margin-top: 5px;
+	}
+	h1 {
+		font-size: 3.125rem;
+	}
+}
+
+.question {
+	width: 100%;
+	min-height: 950px;
+	background-color: #000;
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	text-align: center;
+	h1 {
+		text-align: center;
+		color: white;
+		margin-bottom: 50px;
+		text-align: center;
+		font-size: 40px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	h4 {
+		color: white;
+		padding: 40px;
+		font-size: 25px;
+	}
+}
+.quest {
+	width: 51%;
+	min-height: 75px;
+	background-color: #303030;
+	color: white;
+	align-items: center;
+	justify-content: space-between;
+	display: flex;
+	text-align: left;
+	flex-direction: row;
+	margin: 5px 0;
+	.textbox {
+		display: flex;
+		text-align: left;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		justify-items: center;
+		align-self: center;
+		font-size: 25px;
+		margin: 0 30px;
+		word-spacing: 5px;
+		text-align: left;
+	}
+	i {
+		margin: 0 30px;
+		font-size: 40px;
+		color: rgb(255, 255, 255);
+	}
+	&:focus {
+		background-color: red;
+	}
+}
+.search1 {
+	width: 50%;
+	background-color: none;
+	min-height: 80px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	text-align: left;
+	margin-top: 10px;
+}
+.box1 {
+	width: 100%;
+	min-height: 65px;
+}
+.try1 {
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #e50914;
+	min-height: 70px;
+	width: 70%;
+	color: white;
+	font-size: 30px;
+	margin: 50px 0;
+}
+
+
+.signin__form {
+	margin-top: 30px;
+	width: 100%;
+	position: relative;
+	height: 100%;
+	display: contents;
+	.signin__btn {
+		width: 30%;
+		padding: 13px 0;
+		border-radius: 5px;
+		border: none;
+		background: #e50914;
+		color: white;
+		font-weight: bold;
+		font-size: 16px;
+		cursor: pointer;
+	}
+}
