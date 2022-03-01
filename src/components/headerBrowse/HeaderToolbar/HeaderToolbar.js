@@ -15,7 +15,7 @@ const Headertoolbar = () => {
 
     function logout() {
         localStorage.clear();
-        window.location.href = '/';
+        window.location.href = '/logout';
     }
 
 
@@ -57,12 +57,12 @@ const Headertoolbar = () => {
             </Link>
           
                 <div className={styles.dropdown}>
-                <Image width="100%" height="100%" className={styles.dropbtn} src={LogoImg.src} alt="account"/>
+                <img className={styles.dropbtn} src={LogoImg.src} alt="account"/>
             
                 <div className={styles.dropdown_content}>
-    <a href="#"><Image width="100%" height="100%" className={styles.dropbtn2}  src={LogoImg1.src} alt="account"/>Mehdi</a>
-    <a href="#"><Image width="100%" height="100%" className={styles.dropbtn2}  src={LogoImg2.src} alt="account"/>Kuro Kami</a>
-    <a href="#"><Image width="100%" height="100%" className={styles.dropbtn2}  src={LogoImg3.src} alt="account"/>Parent</a>
+    <a href="#"><img className={styles.dropbtn2}  src={LogoImg1.src} alt="account"/>Mehdi</a>
+    <a href="#"><img className={styles.dropbtn2}  src={LogoImg2.src} alt="account"/>Kuro Kami</a>
+    <a href="#"><img className={styles.dropbtn2}  src={LogoImg3.src} alt="account"/>Parent</a>
     <a href="#">Gérer les profils</a>
 
     <Link href="/account/profil">

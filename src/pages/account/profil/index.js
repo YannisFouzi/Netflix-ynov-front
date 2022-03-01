@@ -44,13 +44,18 @@ const Index = () => {
     <HeaderToolbar/>
 </header>
     <div>
+    <div className={styles.page__login}>
+            <div className={styles.form__login}>
       <TitlePage title="mon compte" />
       <form className={styles.form__profil} onSubmit={(e) => handleSubmit(e)}>
+      <div className={styles.field}>
         <Input
           label="Prénom"
           type="text"
           id="firstName"
           name="firstName"
+          placeholder="Prénom"
+          required={true}
           value={(user && user.firstName) || ""}
           onChange={(e) => {
             setUser({ ...user, firstName: e.target.value });
@@ -61,6 +66,8 @@ const Index = () => {
           type="text"
           id="lastName"
           name="lastName"
+          placeholder="Nom"
+          required={true}
           value={(user && user.lastName) || ""}
           onChange={(e) => {
             setUser({ ...user, lastName: e.target.value });
@@ -71,6 +78,8 @@ const Index = () => {
           type="text"
           id="email"
           name="email"
+          placeholder="Email"
+          required={true}
           value={(user && user.email) || ""}
           onChange={(e) => {
             setUser({ ...user, email: e.target.value });
@@ -81,7 +90,10 @@ const Index = () => {
                   <Message type="success" message="votre profil a bien été modifié"/>
               ) : ""
             }
+              </div>
       </form>
+    </div>
+    </div>
     </div>
     </>
   );

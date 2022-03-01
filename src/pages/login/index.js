@@ -87,7 +87,7 @@ const Index = () => {
                     <div className={styles.onboarding}>
             <div>
             <div className={styles.icon}>
-            <Image width="100%" height="100%" src={LogoImg.src} alt="Facebook"/>
+            <img src={LogoImg.src} alt="Facebook"/>
               </div>
               <small>S&apos;identifier avec facebook</small>
             </div>
